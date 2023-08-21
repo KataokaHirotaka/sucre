@@ -1,0 +1,9 @@
+@use "../../foundation/mixin" as mixin;
+@use "../../foundation/variable" as var;
+
+.swiper {
+  margin-top: 20px;
+  @include mixin.mq(medium) {
+    margin-top: 32px;
+  }
+}

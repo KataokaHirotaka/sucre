@@ -1,0 +1,41 @@
+-
+  const navItems = [
+    {
+      txt: "ABOUT",
+      link: "#about"
+    },
+    {
+      txt: "BUSINESS",
+      link: "#business"
+    },
+    {
+      txt: "RECRUIT",
+      link: "#recruit"
+    },
+    {
+      txt: "PHOTO",
+      link: "#photo"
+    },
+    {
+      txt: "COMPANY",
+      link: "#company"
+    }
+  ]
+
+
+header.l-header
+  .l-header_inner
+    .l-header_logo
+      h1 
+        a(href="/") SUCRE
+    .l-headerNavBtn_wrapper.js-navBtn
+      .l-header_navBtn
+        span
+        span
+    nav.l-header_nav
+      .l-headerNav_inner
+        ul.l-headerAnchor_links.js-anchor
+          each item in navItems
+            li
+              <a href=#{item.link}>
+                span !{item.txt}

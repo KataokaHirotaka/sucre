@@ -1,0 +1,20 @@
+extends ./layout/_layout
+
+block meta
+  -
+    const meta = {
+      title:"SUCRE｜立川市　錦町　ラウンジ",
+      description: "東京都立川市錦町のラウンジ スクレ。高級クラブにも引けを取らない最上級の豪華さを誇るおしゃれな店内が自慢です。",
+    }
+
+block name
+  - const name = "home"
+
+block contents
+  include ./object/_top
+  include ./object/section/_about
+  include ./object/section/_business
+  include ./object/section/_recruit
+  include ./object/section/_photo
+  include ./object/section/_company
+  include ./object/component/_scrollBtn

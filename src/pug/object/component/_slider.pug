@@ -1,0 +1,27 @@
+-
+  const sliderList = [
+    {
+      img: "/img/sucre_1.jpeg"
+    },
+    {
+      img: "/img/sucre_2.jpeg"
+    },
+    {
+      img: "/img/sucre_3.jpeg"
+    },
+    //- {
+    //-   img: "/img/sucre_4.jpg"
+    //- },
+    //- {
+    //-   img: "/img/sucre_5.jpg"
+    //- },
+    //- {
+    //-   img: "/img/sucre_1.jpeg"
+    //- },
+  ]
+
+.swiper.fadeIn
+  .swiper-wrapper
+    each item in sliderList
+      .swiper-slide
+        <img src=!{item.img}>

@@ -1,0 +1,19 @@
+@use "../foundation/mixin" as mixin;
+@use "../foundation/variable" as var;
+
+.o-top_wrapper {
+  margin-top: 42px;
+  @include mixin.mq(medium) {
+    margin-top: 50px;
+  }
+  .o-top_inner {
+    height: 100%;
+    text-align: center;
+    img {
+      @include mixin.mq(medium) {
+        max-width: 1500px;
+        max-height: 640px;
+      }
+    }
+  }
+}
