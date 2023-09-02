@@ -10,7 +10,6 @@ export default class Animation {
   }
 
   onScroll() {
-    console.log("scroll");
     this.$fadeInItems.each((_, item) => {
       const $target = $(item);
       const elemPos = $target.offset().top;
